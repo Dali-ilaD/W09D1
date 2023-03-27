@@ -2,7 +2,8 @@ console.log("Webpack")
 
 import MovingObject from "./moving_object.js"
 window.MovingObject = MovingObject
-
+import Asteroid from "./asteroid.js"
+window.Asteroid = Asteroid
 
 //when you define a variable in index, you also need to apply the variable on the window
 const test = new MovingObject ({
@@ -19,5 +20,5 @@ console.log(test)
 
 const c = document.getElementById("game-canvas");
 const ctx = c.getContext("2d")
-
+window.ctx = ctx
 test.draw(ctx)

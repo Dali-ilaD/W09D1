@@ -1,5 +1,5 @@
 import MovingObject from "./moving_object";
-import * as Util from "./util.js";
+import * as Util from "./utils.js";
 
 class Asteroid extends MovingObject{
     static RADIUS = 25;
@@ -9,7 +9,7 @@ class Asteroid extends MovingObject{
         
         options.color = Asteroid.COLOR;
         options.radius = Asteroid.RADIUS;
-        options.vel = Util.randomVec()
+        options.vel = Util.randomVec(5)
         super(options)
     }
 }
